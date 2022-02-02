@@ -1,8 +1,9 @@
-const valorCusto = 200;
-const valorVenda = 400;
+const num1 = 1;
+const num2 = 2;
+const num3 = 3;
 
-if (valorCusto < 0 || valorVenda < 0) {
-    console.log('Erro!');
+if (num1 % 2 == 0 || num2 % 2 == 0 || num3 % 2 == 0) {
+    console.log(true)
 } else {
-    console.log(valorVenda - (valorCusto * 1.2));
+    console.log(false)
 }
