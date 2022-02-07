@@ -136,8 +136,8 @@ function recieveArray() {
   let biggestValue = 0;
 
   for (key in array) {
-    if (key > biggestValue) {
-      biggestValue = key - 1;
+    if (array[key] > biggestValue) {
+      biggestValue = key;
     }
   }
   return biggestValue;
@@ -147,3 +147,20 @@ console.log(recieveArray());
 console.log();
 console.log('-------------------------');
 console.log();
+
+// 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+// Array de teste: [2, 4, 6, 7, 10, 0, -3];.
+// Valor esperado no retorno da função: 6.
+
+function getArray() {
+  let myArray = [2, 4, 6, 7, 10, 0, -3];
+  let smallestValue = 999999999;
+
+  for (key in myArray) {
+    if (myArray[key] < smallestValue) {
+      smallestValue = key;
+    }
+  }
+  return smallestValue;
+}
+console.log(getArray());
