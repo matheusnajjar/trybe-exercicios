@@ -164,3 +164,26 @@ function getArray() {
   return smallestValue;
 }
 console.log(getArray());
+
+console.log();
+console.log('-------------------------');
+console.log();
+
+// 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+// Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];.
+// Valor esperado no retorno da função: Fernanda.
+
+function arrayNames() {
+  let names = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+  let biggestName = '';
+  let count = 0; 
+
+  for (key in names) {
+    if (names[key].length > count) {
+      count = names[key].length;
+      biggestName = names[key];
+    }
+  }
+  return biggestName;
+}
+console.log(arrayNames());
