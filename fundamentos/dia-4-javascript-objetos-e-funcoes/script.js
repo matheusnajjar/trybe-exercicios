@@ -122,3 +122,28 @@ function verificaPalindrome(word) {
 }
 
 console.log(verificaPalindrome('arara'));
+
+console.log();
+console.log('-------------------------');
+console.log();
+
+// 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+// Array de teste: [2, 3, 6, 7, 10, 1];.
+// Valor esperado no retorno da função: 4.
+
+function recieveArray() {
+  let array = [2, 3, 6, 7, 10, 1];
+  let biggestValue = 0;
+
+  for (key in array) {
+    if (key > biggestValue) {
+      biggestValue = key - 1;
+    }
+  }
+  return biggestValue;
+}
+console.log(recieveArray());
+
+console.log();
+console.log('-------------------------');
+console.log();
