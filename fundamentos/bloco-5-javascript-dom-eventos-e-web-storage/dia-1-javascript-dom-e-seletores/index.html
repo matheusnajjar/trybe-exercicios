@@ -80,10 +80,21 @@
         return text;
       }
 
+      function upperCase() {
+        let big = document.getElementsByTagName('p');
+
+        for (key in big) {
+          big[key].innerText = big[key].innerText.toUpperCase();
+        }
+
+        return big;
+      }
+
       console.log(changeText());
       console.log(changeToGreen());
       console.log(changeToWhite());
       console.log(fixText());
+      console.log(upperCase());
     </script>
   </body>
 </html>
