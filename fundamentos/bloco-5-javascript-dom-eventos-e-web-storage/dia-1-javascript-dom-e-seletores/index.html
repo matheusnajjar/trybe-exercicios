@@ -65,8 +65,19 @@
         return result;
       }
 
-      console.log(changeText());
+      function changeToGreen() {
+        let color = document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
+        return color;
+      }
 
+      function changeToWhite() {
+        let color = document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
+        return color;
+      }
+
+      console.log(changeText());
+      console.log(changeToGreen());
+      console.log(changeToWhite());
     </script>
   </body>
 </html>
