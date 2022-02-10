@@ -75,9 +75,13 @@
       tagP.innerText = 'Testando minha burrice 2.0';
       tagSection.appendChild(tagP);
 
-      const tagSection2 = document.createElement('section');
-      tagSection2.className = 'left-content';
-      tagMain.appendChild(tagSection2);
+      const tagSectionLeft = document.createElement('section');
+      tagSectionLeft.className = 'left-content';
+      tagMain.appendChild(tagSectionLeft);
+
+      const tagSectionRight = document.createElement('section');
+      tagSectionRight.classList = 'right-content';
+      tagMain.appendChild(tagSectionRight);
 
     </script>
   </body>
