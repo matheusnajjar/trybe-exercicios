@@ -59,9 +59,9 @@
     <script>
       const body = document.body;
 
-      const elementH1 = document.createElement('h1');
-      elementH1.id = 'elementH1';
-      body.appendChild(elementH1);
+      const tagH1 = document.createElement('h1');
+      tagH1.id = 'tagH1';
+      body.appendChild(tagH1);
 
       const tagMain = document.createElement('main');
       tagMain.className = 'main-content';
@@ -96,6 +96,11 @@
         const tagIl = document.createElement('li');
         tagIl.innerText = myArray[key];
         tagUl.appendChild(tagIl);
+      }
+
+      for (let index = 0; index <= 2; index += 1) {
+        const tagH3 = document.createElement('h3');
+        tagMain.appendChild(tagH3);
       }
 
     </script>
