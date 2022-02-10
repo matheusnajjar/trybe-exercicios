@@ -57,9 +57,16 @@
   </head>
   <body>
     <script>
+      const body = document.body;
+
       const elementH1 = document.createElement('h1');
       elementH1.id = 'elementH1';
-      document.body.appendChild(elementH1);
+      body.appendChild(elementH1);
+
+      const tagMain = document.createElement('main');
+      tagMain.className = 'main-content';
+      body.appendChild(tagMain);
+
     </script>
   </body>
 </html>
