@@ -88,6 +88,16 @@
       tagImg.src = 'https://picsum.photos/200';
       tagSectionLeft.appendChild(tagImg);
 
+      const tagUl = document.createElement('ul');
+      tagSectionRight.appendChild(tagUl);
+      const myArray = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+
+      for (key in myArray) {
+        const tagIl = document.createElement('li');
+        tagIl.innerText = myArray[key];
+        tagUl.appendChild(tagIl);
+      }
+
     </script>
   </body>
 </html>
